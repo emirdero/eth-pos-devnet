@@ -17,8 +17,10 @@ First, install Docker. Then, run:
 
 ```
 git clone https://github.com/rauljordan/eth-pos-devnet && cd eth-pos-devnet
-docker compose up -d
+run ./reset.sh
 ```
+
+If it fails you might need to install docker compose: https://docs.docker.com/compose/install/
 
 You will see the following:
 
@@ -33,7 +35,8 @@ $ docker compose up -d
  ⠿ Container eth-pos-devnet-beacon-chain-1                 Started
  ⠿ Container eth-pos-devnet-validator-1                    Started
 ```
-Next, you can inspect the logs of the different services launched. 
+
+Next, you can inspect the logs of the different services launched.
 
 ```
 docker logs eth-pos-devnet-geth-1 -f
@@ -70,6 +73,3 @@ Once the mining difficulty of go-ethereum reaches 50, proof-of-stake will be act
 <img width="1693" alt="3" src="https://user-images.githubusercontent.com/5572669/186052298-54b82ff2-a901-482e-9e5a-a7c265605ad6.png">
 <img width="1728" alt="2" src="https://user-images.githubusercontent.com/5572669/186052300-80d9e6d5-e2b7-4e1a-9113-1593e5a5872f.png">
 <img width="1426" alt="1" src="https://user-images.githubusercontent.com/5572669/186052301-dd487b50-183a-4fa6-bbec-216f32d6f03a.png">
-
-
-

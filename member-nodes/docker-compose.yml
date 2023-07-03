@@ -1,0 +1,63 @@
+version: "1.0"
+services:
+  geth:
+    image: "ethereum/client-go:latest"
+    networks:
+      ETHclient_net:
+        ipv4_address: 172.19.0.5
+    command:
+      - --http
+      - --http.api=eth,net,web3
+      - --http.addr=0.0.0.0
+      - --netrestrict=172.19.0.0/16
+      - --networkid=32382
+      - --authrpc.vhosts=*
+      - --authrpc.addr=0.0.0.0
+      - --authrpc.jwtsecret=/execution/jwtsecret
+      - --ethstats=node1:2e0834786285daccd064ca17f1654f67b4aef298acbb82cef9ec422fb4975622@127.0.0.1:30303
+      - --bootnodes=${EL_BOOTNODE}
+      - --datadir=/execution
+      - --allow-insecure-unlock
+      - --unlock=0x123463a4b065722e99115d6c222f267d9cabb524
+      - --password=/execution/geth_password.txt
+      - --syncmode=full
+    volumes:
+      - ./execution:/execution
+      - ./execution/geth_password.txt:/execution/geth_password.txt
+      - ./jwtsecret:/execution/jwtsecret
+
+  # Runs a Prysm beacon chain from a specified genesis state created in the previous step
+  # and connects to go-ethereum in the same network as the execution client.
+  # The account used in go-ethereum is set as the suggested fee recipient for transactions
+  # proposed via the validators attached to the beacon node.
+  beacon-chain:
+    image: "gcr.io/prysmaticlabs/prysm/beacon-chain:latest"
+    networks:
+      ETHclient_net:
+        ipv4_address: 172.19.0.6
+    command:
+      - --datadir=/consensus/beacondata
+      # No peers to sync with in this testnet, so setting to 0
+      - --min-sync-peers=0
+      - --genesis-state=/consensus/genesis.ssz
+      - --bootstrap-node=${CL_BOOTNODE}
+      # The chain configuration file used for setting up Prysm
+      - --chain-config-file=/consensus/config.yml
+      # We specify the chain id used by our execution client
+      - --chain-id=32382
+      - --contract-deployment-block=0
+      - --execution-endpoint=http://172.19.0.5:8551
+      - --accept-terms-of-use
+      - --jwt-secret=/execution/jwtsecret
+      - --suggested-fee-recipient=0x123463a4b065722e99115d6c222f267d9cabb524
+    depends_on:
+      geth:
+        condition: service_started
+    volumes:
+      - ./consensus:/consensus
+      - ./jwtsecret:/execution/jwtsecret
+
+networks:
+  ETHclient_net:
+    name: ETHclient_net
+  

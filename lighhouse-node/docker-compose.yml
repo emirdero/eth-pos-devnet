@@ -4,7 +4,7 @@ services:
     image: "ethereum/client-go:latest"
     networks:
       ETHclient_net:
-        ipv4_address: 172.19.0.5
+        ipv4_address: 172.19.0.11
     command:
       - --http
       - --http.api=eth,net,web3
@@ -36,60 +36,55 @@ services:
   # The account used in go-ethereum is set as the suggested fee recipient for transactions
   # proposed via the validators attached to the beacon node.
   beacon-chain:
-    image: "emird/prysm_bc_source:bug_slash"
+    image: "sigp/lighthouse"
     networks:
       ETHclient_net:
-        ipv4_address: 172.19.0.6
+        ipv4_address: 172.19.0.12
     command:
+      - lighthouse
+      - b
+      - --http
       - --datadir=/consensus/beacondata
-      # No peers to sync with in this testnet, so setting to 0
-      - --min-sync-peers=0
-      - --genesis-state=/consensus/genesis.ssz
-      - --bootstrap-node=${CL_BOOTNODE}
-      # The chain configuration file used for setting up Prysm
-      - --chain-config-file=/consensus/config.yml
-      # We specify the chain id used by our execution client
-      - --chain-id=32382
-      - --contract-deployment-block=0
-      - --execution-endpoint=http://172.19.0.5:8551
-      - --rpc-host=0.0.0.0
-      - --accept-terms-of-use
-      - --jwt-secret=/execution/jwtsecret
+      - --boot-nodes=${CL_BOOTNODE}
+      - --execution-jwt-secret-key=/execution/jwtsecret
+      - --graffiti=lighthouse
+      - --testnet-dir=/consensus
       - --suggested-fee-recipient=0x123463a4b065722e99115d6c222f267d9cabb524
+      - --execution-endpoint=http://172.19.0.11:8551
     depends_on:
       geth:
         condition: service_started
     expose:
-      - 4000:4000
-      - 3500:3500
-      - 8080:8080
-      - 8081:8081
-      - 12000:12000
-      - 13000:13000
+        - 5052:5052/tcp
+        - 5053:5053/tcp
+        - 5054:5054/tcp     # metrics endpoint
+        - 9000:9000/tcp
+        - 9000:9000/udp
     volumes:
       - ./consensus:/consensus
       - ./jwtsecret:/execution/jwtsecret
   
   validator:
-    image: "emird/prysm_vc_source:bug_slash4"
+    image: "gcr.io/prysmaticlabs/prysm/validator:latest"
     networks:
       ETHclient_net:
-        ipv4_address: 172.19.0.7
+        ipv4_address: 172.19.0.13
     command:
-      - --beacon-rpc-provider=172.19.0.6:4000
-      - --beacon-rpc-gateway-provider=172.19.0.6:3500
+      - --beacon-rpc-provider=172.19.0.12:4000
+      - --beacon-rpc-gateway-provider=172.19.0.12:3500
       - --graffiti=test 
       - --datadir=/consensus/validatordata
       - --accept-terms-of-use
       - --interop-num-validators=64
-      - --interop-start-index=64
+      - --interop-start-index=128
       - --chain-config-file=/consensus/config.yml
     depends_on:
       beacon-chain:
         condition: service_started
     volumes:
       - ./consensus:/consensus
+
 networks:
   ETHclient_net:
     name: ETHclient_net
-    
+  

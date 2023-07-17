@@ -1,0 +1,418 @@
+time="2023-07-11 10:52:21" level=warning msg="Enabled feature flag" prefix=flags slasher="Enables a slasher in the beacon node for detecting slashable offenses"
+time="2023-07-11 10:52:22" level=info msg="Slasher received chain initialization event" genesisTime=2023-07-11 10:52:16 +0000 UTC prefix=slasher
+time="2023-07-11 10:52:22" level=info msg="Completed chain sync, starting slashing detection" prefix=slasher
+time="2023-07-11 10:52:22" level=info msg="Reading last epoch written for each validator..." prefix=slasher
+time="2023-07-11 10:52:22" level=info msg="Finished retrieving last epoch written per validator" elapsed=1.488296ms prefix=slasher
+time="2023-07-11 10:52:22" level=info msg="Processing queued blocks for slashing detection" currentEpoch=0 currentSlot=0 numBlocks=0 prefix=slasher
+time="2023-07-11 10:52:22" level=info msg="Processing queued attestations for slashing detection" currentEpoch=0 currentSlot=0 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=0 prefix=slasher
+time="2023-07-11 10:52:22" level=info msg="Subscribed to topic" prefix=sync topic="/eth2/d377aacd/proposer_slashing/ssz_snappy"
+time="2023-07-11 10:52:22" level=info msg="Subscribed to topic" prefix=sync topic="/eth2/d377aacd/attester_slashing/ssz_snappy"
+time="2023-07-11 10:52:22" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=0s elapsed=1.994µs numAttestations=0 numBatchesByValidatorChunkIndex=0 prefix=slasher
+time="2023-07-11 10:52:28" level=info msg="Processing queued blocks for slashing detection" currentEpoch=0 currentSlot=1 numBlocks=0 prefix=slasher
+time="2023-07-11 10:52:28" level=info msg="Processing queued attestations for slashing detection" currentEpoch=0 currentSlot=1 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=0 prefix=slasher
+time="2023-07-11 10:52:28" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=0s elapsed=681ns numAttestations=0 numBatchesByValidatorChunkIndex=0 prefix=slasher
+time="2023-07-11 10:52:40" level=info msg="Processing queued attestations for slashing detection" currentEpoch=0 currentSlot=2 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=0 prefix=slasher
+time="2023-07-11 10:52:40" level=info msg="Processing queued blocks for slashing detection" currentEpoch=0 currentSlot=2 numBlocks=0 prefix=slasher
+time="2023-07-11 10:52:40" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=0s elapsed=1.132µs numAttestations=0 numBatchesByValidatorChunkIndex=0 prefix=slasher
+time="2023-07-11 10:52:52" level=info msg="Processing queued blocks for slashing detection" currentEpoch=0 currentSlot=3 numBlocks=0 prefix=slasher
+time="2023-07-11 10:52:52" level=info msg="Processing queued attestations for slashing detection" currentEpoch=0 currentSlot=3 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=0 prefix=slasher
+time="2023-07-11 10:52:52" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=0s elapsed=1.022µs numAttestations=0 numBatchesByValidatorChunkIndex=0 prefix=slasher
+time="2023-07-11 10:53:04" level=info msg="Processing queued blocks for slashing detection" currentEpoch=0 currentSlot=4 numBlocks=0 prefix=slasher
+time="2023-07-11 10:53:04" level=info msg="Processing queued attestations for slashing detection" currentEpoch=0 currentSlot=4 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=0 prefix=slasher
+time="2023-07-11 10:53:04" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=0s elapsed=1.092µs numAttestations=0 numBatchesByValidatorChunkIndex=0 prefix=slasher
+time="2023-07-11 10:53:16" level=info msg="Processing queued attestations for slashing detection" currentEpoch=0 currentSlot=5 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=0 prefix=slasher
+time="2023-07-11 10:53:16" level=info msg="Processing queued blocks for slashing detection" currentEpoch=0 currentSlot=5 numBlocks=0 prefix=slasher
+time="2023-07-11 10:53:16" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=0s elapsed=1.423µs numAttestations=0 numBatchesByValidatorChunkIndex=0 prefix=slasher
+time="2023-07-11 10:53:28" level=info msg="Processing queued attestations for slashing detection" currentEpoch=1 currentSlot=6 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=0 prefix=slasher
+time="2023-07-11 10:53:28" level=info msg="Processing queued blocks for slashing detection" currentEpoch=1 currentSlot=6 numBlocks=0 prefix=slasher
+time="2023-07-11 10:53:28" level=info msg="Subscribed to topic" prefix=sync topic="/eth2/13687222/proposer_slashing/ssz_snappy"
+time="2023-07-11 10:53:28" level=info msg="Subscribed to topic" prefix=sync topic="/eth2/13687222/attester_slashing/ssz_snappy"
+time="2023-07-11 10:53:28" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=0s elapsed=1.443µs numAttestations=0 numBatchesByValidatorChunkIndex=0 prefix=slasher
+time="2023-07-11 10:53:40" level=info msg="Processing queued blocks for slashing detection" currentEpoch=1 currentSlot=7 numBlocks=0 prefix=slasher
+time="2023-07-11 10:53:40" level=info msg="Processing queued attestations for slashing detection" currentEpoch=1 currentSlot=7 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=0 prefix=slasher
+time="2023-07-11 10:53:40" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=0s elapsed=1.062µs numAttestations=0 numBatchesByValidatorChunkIndex=0 prefix=slasher
+time="2023-07-11 10:53:52" level=info msg="Processing queued blocks for slashing detection" currentEpoch=1 currentSlot=8 numBlocks=0 prefix=slasher
+time="2023-07-11 10:53:52" level=info msg="Processing queued attestations for slashing detection" currentEpoch=1 currentSlot=8 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 10:53:52" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=16.200797ms elapsed=16.204314ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 10:54:04" level=info msg="Processing queued attestations for slashing detection" currentEpoch=1 currentSlot=9 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 10:54:04" level=info msg="Processing queued blocks for slashing detection" currentEpoch=1 currentSlot=9 numBlocks=1 prefix=slasher
+time="2023-07-11 10:54:04" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=16.385204ms elapsed=16.388251ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 10:54:16" level=info msg="Processing queued blocks for slashing detection" currentEpoch=1 currentSlot=10 numBlocks=0 prefix=slasher
+time="2023-07-11 10:54:16" level=info msg="Processing queued attestations for slashing detection" currentEpoch=1 currentSlot=10 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 10:54:16" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=14.346736ms elapsed=14.349692ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 10:54:28" level=info msg="Processing queued blocks for slashing detection" currentEpoch=1 currentSlot=11 numBlocks=1 prefix=slasher
+time="2023-07-11 10:54:28" level=info msg="Processing queued attestations for slashing detection" currentEpoch=1 currentSlot=11 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 10:54:28" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=8.792693ms elapsed=8.79646ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 10:54:40" level=info msg="Processing queued attestations for slashing detection" currentEpoch=2 currentSlot=12 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 10:54:40" level=info msg="Processing queued blocks for slashing detection" currentEpoch=2 currentSlot=12 numBlocks=1 prefix=slasher
+time="2023-07-11 10:54:40" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=20.323594ms elapsed=20.329055ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 10:54:52" level=info msg="Processing queued attestations for slashing detection" currentEpoch=2 currentSlot=13 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 10:54:52" level=info msg="Processing queued blocks for slashing detection" currentEpoch=2 currentSlot=13 numBlocks=1 prefix=slasher
+time="2023-07-11 10:54:52" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=6.45684ms elapsed=6.460266ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 10:55:04" level=info msg="Processing queued attestations for slashing detection" currentEpoch=2 currentSlot=14 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 10:55:04" level=info msg="Processing queued blocks for slashing detection" currentEpoch=2 currentSlot=14 numBlocks=0 prefix=slasher
+time="2023-07-11 10:55:04" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=7.916236ms elapsed=7.919782ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 10:55:16" level=info msg="Processing queued attestations for slashing detection" currentEpoch=2 currentSlot=15 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 10:55:16" level=info msg="Processing queued blocks for slashing detection" currentEpoch=2 currentSlot=15 numBlocks=0 prefix=slasher
+time="2023-07-11 10:55:16" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=7.633419ms elapsed=7.638058ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 10:55:28" level=info msg="Processing queued attestations for slashing detection" currentEpoch=2 currentSlot=16 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 10:55:28" level=info msg="Processing queued blocks for slashing detection" currentEpoch=2 currentSlot=16 numBlocks=0 prefix=slasher
+time="2023-07-11 10:55:28" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=7.660216ms elapsed=7.666056ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 10:55:40" level=info msg="Processing queued blocks for slashing detection" currentEpoch=2 currentSlot=17 numBlocks=0 prefix=slasher
+time="2023-07-11 10:55:40" level=info msg="Processing queued attestations for slashing detection" currentEpoch=2 currentSlot=17 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 10:55:40" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=9.734779ms elapsed=9.738617ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 10:55:52" level=info msg="Processing queued attestations for slashing detection" currentEpoch=3 currentSlot=18 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 10:55:52" level=info msg="Processing queued blocks for slashing detection" currentEpoch=3 currentSlot=18 numBlocks=0 prefix=slasher
+time="2023-07-11 10:55:52" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=20.197306ms elapsed=20.201083ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 10:56:04" level=info msg="Processing queued attestations for slashing detection" currentEpoch=3 currentSlot=19 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 10:56:04" level=info msg="Processing queued blocks for slashing detection" currentEpoch=3 currentSlot=19 numBlocks=1 prefix=slasher
+time="2023-07-11 10:56:04" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=22.261667ms elapsed=22.265044ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 10:56:16" level=info msg="Processing queued attestations for slashing detection" currentEpoch=3 currentSlot=20 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 10:56:16" level=info msg="Processing queued blocks for slashing detection" currentEpoch=3 currentSlot=20 numBlocks=0 prefix=slasher
+time="2023-07-11 10:56:16" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=14.131845ms elapsed=14.135402ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 10:56:27" level=info msg="Processing queued blocks for slashing detection" currentEpoch=3 currentSlot=21 numBlocks=0 prefix=slasher
+time="2023-07-11 10:56:27" level=info msg="Processing queued attestations for slashing detection" currentEpoch=3 currentSlot=21 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 10:56:28" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=14.025816ms elapsed=14.029301ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 10:56:40" level=info msg="Processing queued blocks for slashing detection" currentEpoch=3 currentSlot=22 numBlocks=1 prefix=slasher
+time="2023-07-11 10:56:40" level=info msg="Processing queued attestations for slashing detection" currentEpoch=3 currentSlot=22 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 10:56:40" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=14.55996ms elapsed=14.56518ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 10:56:52" level=info msg="Processing queued blocks for slashing detection" currentEpoch=3 currentSlot=23 numBlocks=1 prefix=slasher
+time="2023-07-11 10:56:52" level=info msg="Processing queued attestations for slashing detection" currentEpoch=3 currentSlot=23 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 10:56:52" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=15.249778ms elapsed=15.253014ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 10:57:04" level=info msg="Processing queued attestations for slashing detection" currentEpoch=4 currentSlot=24 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 10:57:04" level=info msg="Processing queued blocks for slashing detection" currentEpoch=4 currentSlot=24 numBlocks=1 prefix=slasher
+time="2023-07-11 10:57:04" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=17.634735ms elapsed=17.639414ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 10:57:16" level=info msg="Processing queued attestations for slashing detection" currentEpoch=4 currentSlot=25 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 10:57:16" level=info msg="Processing queued blocks for slashing detection" currentEpoch=4 currentSlot=25 numBlocks=0 prefix=slasher
+time="2023-07-11 10:57:16" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=13.080308ms elapsed=13.085266ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 10:57:28" level=info msg="Processing queued attestations for slashing detection" currentEpoch=4 currentSlot=26 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 10:57:28" level=info msg="Processing queued blocks for slashing detection" currentEpoch=4 currentSlot=26 numBlocks=0 prefix=slasher
+time="2023-07-11 10:57:28" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=7.998388ms elapsed=8.002205ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 10:57:40" level=info msg="Processing queued blocks for slashing detection" currentEpoch=4 currentSlot=27 numBlocks=1 prefix=slasher
+time="2023-07-11 10:57:40" level=info msg="Processing queued attestations for slashing detection" currentEpoch=4 currentSlot=27 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 10:57:40" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=6.924203ms elapsed=6.926658ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 10:57:52" level=info msg="Processing queued attestations for slashing detection" currentEpoch=4 currentSlot=28 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 10:57:52" level=info msg="Processing queued blocks for slashing detection" currentEpoch=4 currentSlot=28 numBlocks=1 prefix=slasher
+time="2023-07-11 10:57:52" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=7.032547ms elapsed=7.035141ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 10:58:03" level=info msg="Processing queued blocks for slashing detection" currentEpoch=4 currentSlot=29 numBlocks=0 prefix=slasher
+time="2023-07-11 10:58:03" level=info msg="Processing queued attestations for slashing detection" currentEpoch=4 currentSlot=29 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 10:58:04" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=6.273029ms elapsed=6.276946ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 10:58:16" level=info msg="Processing queued attestations for slashing detection" currentEpoch=5 currentSlot=30 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 10:58:16" level=info msg="Processing queued blocks for slashing detection" currentEpoch=5 currentSlot=30 numBlocks=1 prefix=slasher
+time="2023-07-11 10:58:16" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=24.142858ms elapsed=24.146915ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 10:58:28" level=info msg="Processing queued blocks for slashing detection" currentEpoch=5 currentSlot=31 numBlocks=0 prefix=slasher
+time="2023-07-11 10:58:28" level=info msg="Processing queued attestations for slashing detection" currentEpoch=5 currentSlot=31 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 10:58:28" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=7.652601ms elapsed=7.657189ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 10:58:40" level=info msg="Processing queued blocks for slashing detection" currentEpoch=5 currentSlot=32 numBlocks=0 prefix=slasher
+time="2023-07-11 10:58:40" level=info msg="Processing queued attestations for slashing detection" currentEpoch=5 currentSlot=32 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 10:58:40" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=6.960355ms elapsed=6.963701ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 10:58:52" level=info msg="Processing queued attestations for slashing detection" currentEpoch=5 currentSlot=33 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 10:58:52" level=info msg="Processing queued blocks for slashing detection" currentEpoch=5 currentSlot=33 numBlocks=0 prefix=slasher
+time="2023-07-11 10:58:52" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=8.492805ms elapsed=8.496393ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 10:59:04" level=info msg="Processing queued blocks for slashing detection" currentEpoch=5 currentSlot=34 numBlocks=0 prefix=slasher
+time="2023-07-11 10:59:04" level=info msg="Processing queued attestations for slashing detection" currentEpoch=5 currentSlot=34 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 10:59:04" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=7.071127ms elapsed=7.076196ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 10:59:16" level=info msg="Processing queued attestations for slashing detection" currentEpoch=5 currentSlot=35 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 10:59:16" level=info msg="Processing queued blocks for slashing detection" currentEpoch=5 currentSlot=35 numBlocks=1 prefix=slasher
+time="2023-07-11 10:59:16" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=10.444423ms elapsed=10.449062ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 10:59:28" level=info msg="Processing queued blocks for slashing detection" currentEpoch=6 currentSlot=36 numBlocks=0 prefix=slasher
+time="2023-07-11 10:59:28" level=info msg="Processing queued attestations for slashing detection" currentEpoch=6 currentSlot=36 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 10:59:28" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=13.659277ms elapsed=13.663525ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 10:59:40" level=info msg="Processing queued blocks for slashing detection" currentEpoch=6 currentSlot=37 numBlocks=0 prefix=slasher
+time="2023-07-11 10:59:40" level=info msg="Processing queued attestations for slashing detection" currentEpoch=6 currentSlot=37 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 10:59:40" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=7.311846ms elapsed=7.315292ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 10:59:52" level=info msg="Processing queued blocks for slashing detection" currentEpoch=6 currentSlot=38 numBlocks=1 prefix=slasher
+time="2023-07-11 10:59:52" level=info msg="Processing queued attestations for slashing detection" currentEpoch=6 currentSlot=38 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 10:59:52" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=9.577068ms elapsed=9.580034ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:00:04" level=info msg="Processing queued attestations for slashing detection" currentEpoch=6 currentSlot=39 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:00:04" level=info msg="Processing queued blocks for slashing detection" currentEpoch=6 currentSlot=39 numBlocks=1 prefix=slasher
+time="2023-07-11 11:00:04" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=7.177936ms elapsed=7.180752ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:00:16" level=info msg="Processing queued blocks for slashing detection" currentEpoch=6 currentSlot=40 numBlocks=0 prefix=slasher
+time="2023-07-11 11:00:16" level=info msg="Processing queued attestations for slashing detection" currentEpoch=6 currentSlot=40 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:00:16" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=7.756973ms elapsed=7.761983ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:00:28" level=info msg="Processing queued blocks for slashing detection" currentEpoch=6 currentSlot=41 numBlocks=1 prefix=slasher
+time="2023-07-11 11:00:28" level=info msg="Processing queued attestations for slashing detection" currentEpoch=6 currentSlot=41 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:00:28" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=14.210269ms elapsed=14.212753ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:00:40" level=info msg="Processing queued blocks for slashing detection" currentEpoch=7 currentSlot=42 numBlocks=1 prefix=slasher
+time="2023-07-11 11:00:40" level=info msg="Processing queued attestations for slashing detection" currentEpoch=7 currentSlot=42 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:00:40" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=38.382432ms elapsed=38.387832ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:00:52" level=info msg="Processing queued attestations for slashing detection" currentEpoch=7 currentSlot=43 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:00:52" level=info msg="Processing queued blocks for slashing detection" currentEpoch=7 currentSlot=43 numBlocks=0 prefix=slasher
+time="2023-07-11 11:00:52" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=6.873041ms elapsed=6.876638ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:01:04" level=info msg="Processing queued blocks for slashing detection" currentEpoch=7 currentSlot=44 numBlocks=1 prefix=slasher
+time="2023-07-11 11:01:04" level=info msg="Processing queued attestations for slashing detection" currentEpoch=7 currentSlot=44 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:01:04" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=8.219546ms elapsed=8.22203ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:01:16" level=info msg="Processing queued blocks for slashing detection" currentEpoch=7 currentSlot=45 numBlocks=0 prefix=slasher
+time="2023-07-11 11:01:16" level=info msg="Processing queued attestations for slashing detection" currentEpoch=7 currentSlot=45 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:01:16" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=13.203994ms elapsed=13.207981ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:01:28" level=info msg="Processing queued attestations for slashing detection" currentEpoch=7 currentSlot=46 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:01:28" level=info msg="Processing queued blocks for slashing detection" currentEpoch=7 currentSlot=46 numBlocks=1 prefix=slasher
+time="2023-07-11 11:01:28" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=14.314765ms elapsed=14.317852ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:01:40" level=info msg="Processing queued blocks for slashing detection" currentEpoch=7 currentSlot=47 numBlocks=1 prefix=slasher
+time="2023-07-11 11:01:40" level=info msg="Processing queued attestations for slashing detection" currentEpoch=7 currentSlot=47 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:01:40" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=18.675045ms elapsed=18.679043ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:01:52" level=info msg="Processing queued attestations for slashing detection" currentEpoch=8 currentSlot=48 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:01:52" level=info msg="Processing queued blocks for slashing detection" currentEpoch=8 currentSlot=48 numBlocks=1 prefix=slasher
+time="2023-07-11 11:01:52" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=19.659858ms elapsed=19.664056ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:02:04" level=info msg="Processing queued attestations for slashing detection" currentEpoch=8 currentSlot=49 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:02:04" level=info msg="Processing queued blocks for slashing detection" currentEpoch=8 currentSlot=49 numBlocks=0 prefix=slasher
+time="2023-07-11 11:02:04" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=9.020179ms elapsed=9.023685ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:02:16" level=info msg="Processing queued attestations for slashing detection" currentEpoch=8 currentSlot=50 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:02:16" level=info msg="Processing queued blocks for slashing detection" currentEpoch=8 currentSlot=50 numBlocks=0 prefix=slasher
+time="2023-07-11 11:02:16" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=14.981663ms elapsed=14.984548ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:02:28" level=info msg="Processing queued blocks for slashing detection" currentEpoch=8 currentSlot=51 numBlocks=1 prefix=slasher
+time="2023-07-11 11:02:28" level=info msg="Processing queued attestations for slashing detection" currentEpoch=8 currentSlot=51 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:02:28" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=17.130149ms elapsed=17.134246ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:02:40" level=info msg="Processing queued attestations for slashing detection" currentEpoch=8 currentSlot=52 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:02:40" level=info msg="Processing queued blocks for slashing detection" currentEpoch=8 currentSlot=52 numBlocks=0 prefix=slasher
+time="2023-07-11 11:02:40" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=14.323433ms elapsed=14.326339ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:02:52" level=info msg="Processing queued attestations for slashing detection" currentEpoch=8 currentSlot=53 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:02:52" level=info msg="Processing queued blocks for slashing detection" currentEpoch=8 currentSlot=53 numBlocks=0 prefix=slasher
+time="2023-07-11 11:02:52" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=13.820588ms elapsed=13.823684ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:03:03" level=info msg="Processing queued blocks for slashing detection" currentEpoch=9 currentSlot=54 numBlocks=0 prefix=slasher
+time="2023-07-11 11:03:04" level=info msg="Processing queued attestations for slashing detection" currentEpoch=9 currentSlot=54 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:03:04" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=26.049824ms elapsed=26.056297ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:03:16" level=info msg="Processing queued blocks for slashing detection" currentEpoch=9 currentSlot=55 numBlocks=0 prefix=slasher
+time="2023-07-11 11:03:16" level=info msg="Processing queued attestations for slashing detection" currentEpoch=9 currentSlot=55 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:03:16" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=13.386172ms elapsed=13.389648ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:03:28" level=info msg="Processing queued blocks for slashing detection" currentEpoch=9 currentSlot=56 numBlocks=1 prefix=slasher
+time="2023-07-11 11:03:28" level=info msg="Processing queued attestations for slashing detection" currentEpoch=9 currentSlot=56 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:03:28" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=15.443091ms elapsed=15.446628ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:03:40" level=info msg="Processing queued blocks for slashing detection" currentEpoch=9 currentSlot=57 numBlocks=1 prefix=slasher
+time="2023-07-11 11:03:40" level=info msg="Processing queued attestations for slashing detection" currentEpoch=9 currentSlot=57 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:03:40" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=16.48921ms elapsed=16.492837ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:03:52" level=info msg="Processing queued blocks for slashing detection" currentEpoch=9 currentSlot=58 numBlocks=0 prefix=slasher
+time="2023-07-11 11:03:52" level=info msg="Processing queued attestations for slashing detection" currentEpoch=9 currentSlot=58 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:03:52" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=13.781887ms elapsed=13.784302ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:04:03" level=info msg="Processing queued blocks for slashing detection" currentEpoch=9 currentSlot=59 numBlocks=0 prefix=slasher
+time="2023-07-11 11:04:04" level=info msg="Processing queued attestations for slashing detection" currentEpoch=9 currentSlot=59 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:04:04" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=14.23323ms elapsed=14.236876ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:04:16" level=info msg="Processing queued attestations for slashing detection" currentEpoch=10 currentSlot=60 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:04:16" level=info msg="Processing queued blocks for slashing detection" currentEpoch=10 currentSlot=60 numBlocks=1 prefix=slasher
+time="2023-07-11 11:04:16" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=21.57481ms elapsed=21.579047ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:04:28" level=info msg="Processing queued attestations for slashing detection" currentEpoch=10 currentSlot=61 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:04:28" level=info msg="Processing queued blocks for slashing detection" currentEpoch=10 currentSlot=61 numBlocks=1 prefix=slasher
+time="2023-07-11 11:04:28" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=14.612457ms elapsed=14.616074ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:04:40" level=info msg="Processing queued attestations for slashing detection" currentEpoch=10 currentSlot=62 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:04:40" level=info msg="Processing queued blocks for slashing detection" currentEpoch=10 currentSlot=62 numBlocks=1 prefix=slasher
+time="2023-07-11 11:04:40" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=15.305885ms elapsed=15.30846ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:04:52" level=info msg="Processing queued attestations for slashing detection" currentEpoch=10 currentSlot=63 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:04:52" level=info msg="Processing queued blocks for slashing detection" currentEpoch=10 currentSlot=63 numBlocks=0 prefix=slasher
+time="2023-07-11 11:04:52" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=14.597967ms elapsed=14.600652ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:05:04" level=info msg="Processing queued blocks for slashing detection" currentEpoch=10 currentSlot=64 numBlocks=1 prefix=slasher
+time="2023-07-11 11:05:04" level=info msg="Processing queued attestations for slashing detection" currentEpoch=10 currentSlot=64 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:05:04" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=15.880385ms elapsed=15.88319ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:05:16" level=info msg="Processing queued blocks for slashing detection" currentEpoch=10 currentSlot=65 numBlocks=0 prefix=slasher
+time="2023-07-11 11:05:16" level=info msg="Processing queued attestations for slashing detection" currentEpoch=10 currentSlot=65 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:05:16" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=14.702112ms elapsed=14.705899ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:05:28" level=info msg="Processing queued blocks for slashing detection" currentEpoch=11 currentSlot=66 numBlocks=0 prefix=slasher
+time="2023-07-11 11:05:28" level=info msg="Processing queued attestations for slashing detection" currentEpoch=11 currentSlot=66 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:05:28" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=16.278307ms elapsed=16.282744ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:05:40" level=info msg="Processing queued attestations for slashing detection" currentEpoch=11 currentSlot=67 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:05:40" level=info msg="Processing queued blocks for slashing detection" currentEpoch=11 currentSlot=67 numBlocks=1 prefix=slasher
+time="2023-07-11 11:05:40" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=16.516141ms elapsed=16.519257ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:05:52" level=info msg="Processing queued attestations for slashing detection" currentEpoch=11 currentSlot=68 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:05:52" level=info msg="Processing queued blocks for slashing detection" currentEpoch=11 currentSlot=68 numBlocks=0 prefix=slasher
+time="2023-07-11 11:05:52" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=14.577944ms elapsed=14.580919ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:06:04" level=info msg="Processing queued attestations for slashing detection" currentEpoch=11 currentSlot=69 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:06:04" level=info msg="Processing queued blocks for slashing detection" currentEpoch=11 currentSlot=69 numBlocks=0 prefix=slasher
+time="2023-07-11 11:06:04" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=14.257372ms elapsed=14.260518ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:06:16" level=info msg="Processing queued blocks for slashing detection" currentEpoch=11 currentSlot=70 numBlocks=1 prefix=slasher
+time="2023-07-11 11:06:16" level=info msg="Processing queued attestations for slashing detection" currentEpoch=11 currentSlot=70 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:06:16" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=17.238869ms elapsed=17.242126ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:06:27" level=info msg="Processing queued attestations for slashing detection" currentEpoch=11 currentSlot=71 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:06:28" level=info msg="Processing queued blocks for slashing detection" currentEpoch=11 currentSlot=71 numBlocks=0 prefix=slasher
+time="2023-07-11 11:06:28" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=18.161924ms elapsed=18.166973ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:06:40" level=info msg="Processing queued attestations for slashing detection" currentEpoch=12 currentSlot=72 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:06:40" level=info msg="Processing queued blocks for slashing detection" currentEpoch=12 currentSlot=72 numBlocks=0 prefix=slasher
+time="2023-07-11 11:06:40" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=15.54456ms elapsed=15.54964ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:06:52" level=info msg="Processing queued blocks for slashing detection" currentEpoch=12 currentSlot=73 numBlocks=1 prefix=slasher
+time="2023-07-11 11:06:52" level=info msg="Processing queued attestations for slashing detection" currentEpoch=12 currentSlot=73 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:06:52" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=15.042422ms elapsed=15.045999ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:07:04" level=info msg="Processing queued blocks for slashing detection" currentEpoch=12 currentSlot=74 numBlocks=0 prefix=slasher
+time="2023-07-11 11:07:04" level=info msg="Processing queued attestations for slashing detection" currentEpoch=12 currentSlot=74 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:07:04" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=8.147615ms elapsed=8.152624ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:07:16" level=info msg="Processing queued blocks for slashing detection" currentEpoch=12 currentSlot=75 numBlocks=0 prefix=slasher
+time="2023-07-11 11:07:16" level=info msg="Processing queued attestations for slashing detection" currentEpoch=12 currentSlot=75 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:07:16" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=15.959266ms elapsed=15.964466ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:07:27" level=info msg="Processing queued blocks for slashing detection" currentEpoch=12 currentSlot=76 numBlocks=1 prefix=slasher
+time="2023-07-11 11:07:27" level=info msg="Processing queued attestations for slashing detection" currentEpoch=12 currentSlot=76 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:07:28" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=13.063611ms elapsed=13.066316ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:07:40" level=info msg="Processing queued blocks for slashing detection" currentEpoch=12 currentSlot=77 numBlocks=0 prefix=slasher
+time="2023-07-11 11:07:40" level=info msg="Processing queued attestations for slashing detection" currentEpoch=12 currentSlot=77 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:07:40" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=13.25174ms elapsed=13.254806ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:07:52" level=info msg="Processing queued attestations for slashing detection" currentEpoch=13 currentSlot=78 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:07:52" level=info msg="Processing queued blocks for slashing detection" currentEpoch=13 currentSlot=78 numBlocks=0 prefix=slasher
+time="2023-07-11 11:07:52" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=17.447662ms elapsed=17.45182ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:08:03" level=info msg="Processing queued blocks for slashing detection" currentEpoch=13 currentSlot=79 numBlocks=1 prefix=slasher
+time="2023-07-11 11:08:03" level=info msg="Processing queued attestations for slashing detection" currentEpoch=13 currentSlot=79 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:08:04" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=14.692907ms elapsed=14.695411ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:08:16" level=info msg="Processing queued attestations for slashing detection" currentEpoch=13 currentSlot=80 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:08:16" level=info msg="Processing queued blocks for slashing detection" currentEpoch=13 currentSlot=80 numBlocks=1 prefix=slasher
+time="2023-07-11 11:08:16" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=14.424248ms elapsed=14.429398ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:08:28" level=info msg="Processing queued blocks for slashing detection" currentEpoch=13 currentSlot=81 numBlocks=1 prefix=slasher
+time="2023-07-11 11:08:28" level=info msg="Processing queued attestations for slashing detection" currentEpoch=13 currentSlot=81 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:08:28" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=13.811172ms elapsed=13.813767ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:08:40" level=info msg="Processing queued blocks for slashing detection" currentEpoch=13 currentSlot=82 numBlocks=0 prefix=slasher
+time="2023-07-11 11:08:40" level=info msg="Processing queued attestations for slashing detection" currentEpoch=13 currentSlot=82 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:08:40" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=13.647422ms elapsed=13.650479ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:08:52" level=info msg="Processing queued blocks for slashing detection" currentEpoch=13 currentSlot=83 numBlocks=1 prefix=slasher
+time="2023-07-11 11:08:52" level=info msg="Processing queued attestations for slashing detection" currentEpoch=13 currentSlot=83 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:08:52" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=14.715957ms elapsed=14.719573ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:09:04" level=info msg="Processing queued attestations for slashing detection" currentEpoch=14 currentSlot=84 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:09:04" level=info msg="Processing queued blocks for slashing detection" currentEpoch=14 currentSlot=84 numBlocks=1 prefix=slasher
+time="2023-07-11 11:09:04" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=18.152087ms elapsed=18.155773ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:09:16" level=info msg="Processing queued attestations for slashing detection" currentEpoch=14 currentSlot=85 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:09:16" level=info msg="Processing queued blocks for slashing detection" currentEpoch=14 currentSlot=85 numBlocks=0 prefix=slasher
+time="2023-07-11 11:09:16" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=9.162993ms elapsed=9.167902ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:09:28" level=info msg="Processing queued attestations for slashing detection" currentEpoch=14 currentSlot=86 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:09:28" level=info msg="Processing queued blocks for slashing detection" currentEpoch=14 currentSlot=86 numBlocks=0 prefix=slasher
+time="2023-07-11 11:09:28" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=14.277175ms elapsed=14.281212ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:09:40" level=info msg="Processing queued attestations for slashing detection" currentEpoch=14 currentSlot=87 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:09:40" level=info msg="Processing queued blocks for slashing detection" currentEpoch=14 currentSlot=87 numBlocks=0 prefix=slasher
+time="2023-07-11 11:09:40" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=15.446733ms elapsed=15.45087ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:09:52" level=info msg="Processing queued blocks for slashing detection" currentEpoch=14 currentSlot=88 numBlocks=1 prefix=slasher
+time="2023-07-11 11:09:52" level=info msg="Processing queued attestations for slashing detection" currentEpoch=14 currentSlot=88 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:09:52" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=13.336063ms elapsed=13.33947ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:10:03" level=info msg="Processing queued attestations for slashing detection" currentEpoch=14 currentSlot=89 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:10:03" level=info msg="Processing queued blocks for slashing detection" currentEpoch=14 currentSlot=89 numBlocks=1 prefix=slasher
+time="2023-07-11 11:10:04" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=12.99588ms elapsed=12.999367ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:10:16" level=info msg="Processing queued attestations for slashing detection" currentEpoch=15 currentSlot=90 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:10:16" level=info msg="Processing queued blocks for slashing detection" currentEpoch=15 currentSlot=90 numBlocks=1 prefix=slasher
+time="2023-07-11 11:10:16" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=17.276743ms elapsed=17.28021ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:10:28" level=info msg="Processing queued blocks for slashing detection" currentEpoch=15 currentSlot=91 numBlocks=0 prefix=slasher
+time="2023-07-11 11:10:28" level=info msg="Processing queued attestations for slashing detection" currentEpoch=15 currentSlot=91 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:10:28" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=13.31548ms elapsed=13.318435ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:10:40" level=info msg="Processing queued attestations for slashing detection" currentEpoch=15 currentSlot=92 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:10:40" level=info msg="Processing queued blocks for slashing detection" currentEpoch=15 currentSlot=92 numBlocks=1 prefix=slasher
+time="2023-07-11 11:10:40" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=14.315043ms elapsed=14.317959ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:10:52" level=info msg="Processing queued blocks for slashing detection" currentEpoch=15 currentSlot=93 numBlocks=0 prefix=slasher
+time="2023-07-11 11:10:52" level=info msg="Processing queued attestations for slashing detection" currentEpoch=15 currentSlot=93 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:10:52" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=11.534677ms elapsed=11.537913ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:11:03" level=info msg="Processing queued attestations for slashing detection" currentEpoch=15 currentSlot=94 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:11:03" level=info msg="Processing queued blocks for slashing detection" currentEpoch=15 currentSlot=94 numBlocks=0 prefix=slasher
+time="2023-07-11 11:11:04" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=14.426339ms elapsed=14.43179ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:11:16" level=info msg="Processing queued blocks for slashing detection" currentEpoch=15 currentSlot=95 numBlocks=1 prefix=slasher
+time="2023-07-11 11:11:16" level=info msg="Processing queued attestations for slashing detection" currentEpoch=15 currentSlot=95 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:11:16" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=12.873419ms elapsed=12.876936ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:11:28" level=info msg="Processing queued blocks for slashing detection" currentEpoch=16 currentSlot=96 numBlocks=1 prefix=slasher
+time="2023-07-11 11:11:28" level=info msg="Processing queued attestations for slashing detection" currentEpoch=16 currentSlot=96 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:11:28" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=32.223652ms elapsed=32.22804ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:11:40" level=info msg="Processing queued attestations for slashing detection" currentEpoch=16 currentSlot=97 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:11:40" level=info msg="Processing queued blocks for slashing detection" currentEpoch=16 currentSlot=97 numBlocks=0 prefix=slasher
+time="2023-07-11 11:11:40" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=12.111032ms elapsed=12.113657ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:11:52" level=info msg="Processing queued attestations for slashing detection" currentEpoch=16 currentSlot=98 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:11:52" level=info msg="Processing queued blocks for slashing detection" currentEpoch=16 currentSlot=98 numBlocks=0 prefix=slasher
+time="2023-07-11 11:11:52" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=11.086775ms elapsed=11.08897ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:12:04" level=info msg="Processing queued attestations for slashing detection" currentEpoch=16 currentSlot=99 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:12:04" level=info msg="Processing queued blocks for slashing detection" currentEpoch=16 currentSlot=99 numBlocks=1 prefix=slasher
+time="2023-07-11 11:12:04" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=13.358269ms elapsed=13.360312ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:12:16" level=info msg="Processing queued blocks for slashing detection" currentEpoch=16 currentSlot=100 numBlocks=0 prefix=slasher
+time="2023-07-11 11:12:16" level=info msg="Processing queued attestations for slashing detection" currentEpoch=16 currentSlot=100 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:12:16" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=12.163104ms elapsed=12.16623ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:12:28" level=info msg="Processing queued blocks for slashing detection" currentEpoch=16 currentSlot=101 numBlocks=1 prefix=slasher
+time="2023-07-11 11:12:28" level=info msg="Processing queued attestations for slashing detection" currentEpoch=16 currentSlot=101 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:12:28" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=15.366245ms elapsed=15.36945ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:12:40" level=info msg="Processing queued blocks for slashing detection" currentEpoch=17 currentSlot=102 numBlocks=0 prefix=slasher
+time="2023-07-11 11:12:40" level=info msg="Processing queued attestations for slashing detection" currentEpoch=17 currentSlot=102 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:12:40" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=9.569456ms elapsed=9.573031ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:12:52" level=info msg="Processing queued attestations for slashing detection" currentEpoch=17 currentSlot=103 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:12:52" level=info msg="Processing queued blocks for slashing detection" currentEpoch=17 currentSlot=103 numBlocks=1 prefix=slasher
+time="2023-07-11 11:12:52" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=12.594678ms elapsed=12.596761ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:13:04" level=info msg="Processing queued blocks for slashing detection" currentEpoch=17 currentSlot=104 numBlocks=1 prefix=slasher
+time="2023-07-11 11:13:04" level=info msg="Processing queued attestations for slashing detection" currentEpoch=17 currentSlot=104 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:13:04" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=14.532316ms elapsed=14.535051ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:13:16" level=info msg="Processing queued attestations for slashing detection" currentEpoch=17 currentSlot=105 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:13:16" level=info msg="Processing queued blocks for slashing detection" currentEpoch=17 currentSlot=105 numBlocks=1 prefix=slasher
+time="2023-07-11 11:13:16" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=13.155478ms elapsed=13.159135ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:13:28" level=info msg="Processing queued attestations for slashing detection" currentEpoch=17 currentSlot=106 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:13:28" level=info msg="Processing queued blocks for slashing detection" currentEpoch=17 currentSlot=106 numBlocks=1 prefix=slasher
+time="2023-07-11 11:13:28" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=14.633658ms elapsed=14.636873ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:13:40" level=info msg="Processing queued blocks for slashing detection" currentEpoch=17 currentSlot=107 numBlocks=0 prefix=slasher
+time="2023-07-11 11:13:40" level=info msg="Processing queued attestations for slashing detection" currentEpoch=17 currentSlot=107 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:13:40" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=11.448441ms elapsed=11.450925ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:13:52" level=info msg="Processing queued attestations for slashing detection" currentEpoch=18 currentSlot=108 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:13:52" level=info msg="Processing queued blocks for slashing detection" currentEpoch=18 currentSlot=108 numBlocks=0 prefix=slasher
+time="2023-07-11 11:13:52" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=19.835326ms elapsed=19.840816ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:14:04" level=info msg="Processing queued blocks for slashing detection" currentEpoch=18 currentSlot=109 numBlocks=1 prefix=slasher
+time="2023-07-11 11:14:04" level=info msg="Processing queued attestations for slashing detection" currentEpoch=18 currentSlot=109 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:14:04" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=12.424472ms elapsed=12.428079ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:14:16" level=info msg="Processing queued blocks for slashing detection" currentEpoch=18 currentSlot=110 numBlocks=1 prefix=slasher
+time="2023-07-11 11:14:16" level=info msg="Processing queued attestations for slashing detection" currentEpoch=18 currentSlot=110 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:14:16" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=13.5817ms elapsed=13.585467ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:14:28" level=info msg="Processing queued blocks for slashing detection" currentEpoch=18 currentSlot=111 numBlocks=1 prefix=slasher
+time="2023-07-11 11:14:28" level=info msg="Processing queued attestations for slashing detection" currentEpoch=18 currentSlot=111 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:14:28" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=12.841831ms elapsed=12.858011ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:14:40" level=info msg="Processing queued blocks for slashing detection" currentEpoch=18 currentSlot=112 numBlocks=0 prefix=slasher
+time="2023-07-11 11:14:40" level=info msg="Processing queued attestations for slashing detection" currentEpoch=18 currentSlot=112 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:14:40" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=15.050694ms elapsed=15.054371ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:14:52" level=info msg="Processing queued blocks for slashing detection" currentEpoch=18 currentSlot=113 numBlocks=0 prefix=slasher
+time="2023-07-11 11:14:52" level=info msg="Processing queued attestations for slashing detection" currentEpoch=18 currentSlot=113 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:14:52" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=12.360759ms elapsed=12.363775ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:15:04" level=info msg="Processing queued attestations for slashing detection" currentEpoch=19 currentSlot=114 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:15:04" level=info msg="Processing queued blocks for slashing detection" currentEpoch=19 currentSlot=114 numBlocks=1 prefix=slasher
+time="2023-07-11 11:15:04" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=17.310245ms elapsed=17.314223ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:15:16" level=info msg="Processing queued blocks for slashing detection" currentEpoch=19 currentSlot=115 numBlocks=1 prefix=slasher
+time="2023-07-11 11:15:16" level=info msg="Processing queued attestations for slashing detection" currentEpoch=19 currentSlot=115 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:15:16" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=14.043857ms elapsed=14.046762ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:15:27" level=info msg="Processing queued attestations for slashing detection" currentEpoch=19 currentSlot=116 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:15:27" level=info msg="Processing queued blocks for slashing detection" currentEpoch=19 currentSlot=116 numBlocks=0 prefix=slasher
+time="2023-07-11 11:15:28" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=15.177425ms elapsed=15.181703ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:15:40" level=info msg="Processing queued attestations for slashing detection" currentEpoch=19 currentSlot=117 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:15:40" level=info msg="Processing queued blocks for slashing detection" currentEpoch=19 currentSlot=117 numBlocks=1 prefix=slasher
+time="2023-07-11 11:15:40" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=15.945151ms elapsed=15.948197ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:15:52" level=info msg="Processing queued attestations for slashing detection" currentEpoch=19 currentSlot=118 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:15:52" level=info msg="Processing queued blocks for slashing detection" currentEpoch=19 currentSlot=118 numBlocks=0 prefix=slasher
+time="2023-07-11 11:15:52" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=9.552201ms elapsed=9.554536ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:16:04" level=info msg="Processing queued blocks for slashing detection" currentEpoch=19 currentSlot=119 numBlocks=0 prefix=slasher
+time="2023-07-11 11:16:04" level=info msg="Processing queued attestations for slashing detection" currentEpoch=19 currentSlot=119 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:16:04" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=9.692145ms elapsed=9.696052ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:16:16" level=info msg="Processing queued attestations for slashing detection" currentEpoch=20 currentSlot=120 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:16:16" level=info msg="Processing queued blocks for slashing detection" currentEpoch=20 currentSlot=120 numBlocks=1 prefix=slasher
+time="2023-07-11 11:16:16" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=14.834654ms elapsed=14.83764ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:16:28" level=info msg="Processing queued attestations for slashing detection" currentEpoch=20 currentSlot=121 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:16:28" level=info msg="Processing queued blocks for slashing detection" currentEpoch=20 currentSlot=121 numBlocks=0 prefix=slasher
+time="2023-07-11 11:16:28" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=14.593015ms elapsed=14.596701ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:16:40" level=info msg="Processing queued blocks for slashing detection" currentEpoch=20 currentSlot=122 numBlocks=1 prefix=slasher
+time="2023-07-11 11:16:40" level=info msg="Processing queued attestations for slashing detection" currentEpoch=20 currentSlot=122 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:16:40" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=14.265913ms elapsed=14.268067ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:16:52" level=info msg="Processing queued blocks for slashing detection" currentEpoch=20 currentSlot=123 numBlocks=0 prefix=slasher
+time="2023-07-11 11:16:52" level=info msg="Processing queued attestations for slashing detection" currentEpoch=20 currentSlot=123 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:16:52" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=12.393382ms elapsed=12.396949ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:17:04" level=info msg="Processing queued attestations for slashing detection" currentEpoch=20 currentSlot=124 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:17:04" level=info msg="Processing queued blocks for slashing detection" currentEpoch=20 currentSlot=124 numBlocks=0 prefix=slasher
+time="2023-07-11 11:17:04" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=13.717794ms elapsed=13.721492ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:17:16" level=info msg="Processing queued blocks for slashing detection" currentEpoch=20 currentSlot=125 numBlocks=1 prefix=slasher
+time="2023-07-11 11:17:16" level=info msg="Processing queued attestations for slashing detection" currentEpoch=20 currentSlot=125 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:17:16" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=13.469591ms elapsed=13.472566ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:17:28" level=info msg="Processing queued blocks for slashing detection" currentEpoch=21 currentSlot=126 numBlocks=1 prefix=slasher
+time="2023-07-11 11:17:28" level=info msg="Processing queued attestations for slashing detection" currentEpoch=21 currentSlot=126 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:17:28" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=16.105276ms elapsed=16.110236ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:17:40" level=info msg="Processing queued attestations for slashing detection" currentEpoch=21 currentSlot=127 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:17:40" level=info msg="Processing queued blocks for slashing detection" currentEpoch=21 currentSlot=127 numBlocks=1 prefix=slasher
+time="2023-07-11 11:17:40" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=16.88453ms elapsed=16.887305ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:17:52" level=info msg="Processing queued attestations for slashing detection" currentEpoch=21 currentSlot=128 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:17:52" level=info msg="Processing queued blocks for slashing detection" currentEpoch=21 currentSlot=128 numBlocks=1 prefix=slasher
+time="2023-07-11 11:17:52" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=11.652914ms elapsed=11.65551ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:18:03" level=info msg="Processing queued blocks for slashing detection" currentEpoch=21 currentSlot=129 numBlocks=0 prefix=slasher
+time="2023-07-11 11:18:03" level=info msg="Processing queued attestations for slashing detection" currentEpoch=21 currentSlot=129 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:18:04" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=15.920654ms elapsed=15.924001ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:18:16" level=info msg="Processing queued attestations for slashing detection" currentEpoch=21 currentSlot=130 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:18:16" level=info msg="Processing queued blocks for slashing detection" currentEpoch=21 currentSlot=130 numBlocks=1 prefix=slasher
+time="2023-07-11 11:18:16" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=17.10695ms elapsed=17.111409ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:18:28" level=info msg="Processing queued blocks for slashing detection" currentEpoch=21 currentSlot=131 numBlocks=0 prefix=slasher
+time="2023-07-11 11:18:28" level=info msg="Processing queued attestations for slashing detection" currentEpoch=21 currentSlot=131 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:18:28" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=9.783044ms elapsed=9.787202ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:18:40" level=info msg="Processing queued attestations for slashing detection" currentEpoch=22 currentSlot=132 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:18:40" level=info msg="Processing queued blocks for slashing detection" currentEpoch=22 currentSlot=132 numBlocks=1 prefix=slasher
+time="2023-07-11 11:18:40" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=21.972531ms elapsed=21.976869ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:18:52" level=info msg="Processing queued blocks for slashing detection" currentEpoch=22 currentSlot=133 numBlocks=1 prefix=slasher
+time="2023-07-11 11:18:52" level=info msg="Processing queued attestations for slashing detection" currentEpoch=22 currentSlot=133 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:18:52" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=11.732338ms elapsed=11.735974ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:19:04" level=info msg="Processing queued attestations for slashing detection" currentEpoch=22 currentSlot=134 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:19:04" level=info msg="Processing queued blocks for slashing detection" currentEpoch=22 currentSlot=134 numBlocks=1 prefix=slasher
+time="2023-07-11 11:19:04" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=15.177121ms elapsed=15.179445ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:19:16" level=info msg="Processing queued attestations for slashing detection" currentEpoch=22 currentSlot=135 numDeferredAtts=0 numDroppedAtts=0 numValidAtts=1 prefix=slasher
+time="2023-07-11 11:19:16" level=info msg="Processing queued blocks for slashing detection" currentEpoch=22 currentSlot=135 numBlocks=1 prefix=slasher
+time="2023-07-11 11:19:16" level=info msg="Done checking slashable attestations" avgBatchProcessingTime=13.43994ms elapsed=13.442946ms numAttestations=1 numBatchesByValidatorChunkIndex=1 prefix=slasher
+time="2023-07-11 11:19:18" level=info msg="Flushing last epoch written for each validator to disk, please wait" prefix=slasher

@@ -1,65 +1,31 @@
-version: "3.9"
+version: "1.0"
 services:
-  #Creates a genesis state for the beacon chain using a YAML configuration file and
-  # a deterministic set of 64 validators.
-  create-beacon-chain-genesis:
-    image: "gcr.io/prysmaticlabs/prysm/cmd/prysmctl:latest"
-    command:
-      - testnet
-      - generate-genesis
-      - --fork=bellatrix
-      - --num-validators=128
-      - --output-ssz=/consensus/genesis.ssz
-      - --chain-config-file=/consensus/config.yml
-      - --geth-genesis-json-in=/execution/genesis.json
-      - --geth-genesis-json-out=/execution/genesis.json
-    volumes:
-      - ./consensus:/consensus
-      - ./execution:/execution
-
-  # Sets up the genesis configuration for the go-ethereum client from a JSON file.
-  geth-genesis:
-    image: "ethereum/client-go:latest"
-    command: --datadir=/execution init /execution/genesis.json
-    volumes:
-      - ./execution:/execution
-      - ./execution/genesis.json:/execution/genesis.json
-    depends_on:
-      create-beacon-chain-genesis:
-        condition: service_completed_successfully
-
-  # Runs the go-ethereum execution client with the specified, unlocked account and necessary
-  # APIs to allow for proof-of-stake consensus via Prysm.
   geth:
-    image: "geth-from-source:latest"
+    image: "ethereum/client-go:latest"
     networks:
       ETHclient_net:
-        ipv4_address: 172.19.0.2
+        ipv4_address: 172.19.0.8
     command:
       - --http
       - --http.api=eth,net,web3
       - --http.addr=0.0.0.0
       - --netrestrict=172.19.0.0/16
+      - --ethstats=node2:2e0834786285daccd064ca17f1654f67b4aef298acbb82cef9ec422fb4975622@127.0.0.1:30303
       - --networkid=32382
-      - --ethstats=node1:2e0834786285daccd064ca17f1654f67b4aef298acbb82cef9ec422fb4975622@127.0.0.1:30303
-      - --metrics
-      - --metrics.addr=0.0.0.0
       - --authrpc.vhosts=*
       - --authrpc.addr=0.0.0.0
       - --authrpc.jwtsecret=/execution/jwtsecret
+      - --bootnodes=${EL_BOOTNODE}
       - --datadir=/execution
       - --allow-insecure-unlock
       - --unlock=0x123463a4b065722e99115d6c222f267d9cabb524
       - --password=/execution/geth_password.txt
       - --syncmode=full
-    ports:
+    expose:
       - 8551:8551
       - 8545:8545
       - 6060:6060
       - 30303:30303
-    depends_on:
-      geth-genesis:
-        condition: service_completed_successfully
     volumes:
       - ./execution:/execution
       - ./execution/geth_password.txt:/execution/geth_password.txt
@@ -70,65 +36,57 @@ services:
   # The account used in go-ethereum is set as the suggested fee recipient for transactions
   # proposed via the validators attached to the beacon node.
   beacon-chain:
-    image: "gcr.io/prysmaticlabs/prysm/beacon-chain:latest"
+    image: "hyperledger/besu:latest"
     networks:
       ETHclient_net:
-        ipv4_address: 172.19.0.3
+        ipv4_address: 172.19.0.9
     command:
       - --datadir=/consensus/beacondata
-      - --slasher
       # No peers to sync with in this testnet, so setting to 0
       - --min-sync-peers=0
-      - --monitoring-host=0.0.0.0
-      - --monitoring-port=8080
       - --genesis-state=/consensus/genesis.ssz
+      - --bootstrap-node=${CL_BOOTNODE}
       # The chain configuration file used for setting up Prysm
       - --chain-config-file=/consensus/config.yml
       # We specify the chain id used by our execution client
-      - --chain-id=${CHAIN_ID:-32382}
-      - --rpc-host=0.0.0.0
+      - --chain-id=32382
       - --contract-deployment-block=0
-      - --grpc-gateway-host=0.0.0.0
-      - --execution-endpoint=http://172.19.0.2:8551
+      - --execution-endpoint=http://172.19.0.8:8551
+      - --rpc-host=0.0.0.0
       - --accept-terms-of-use
       - --jwt-secret=/execution/jwtsecret
       - --suggested-fee-recipient=0x123463a4b065722e99115d6c222f267d9cabb524
     depends_on:
       geth:
         condition: service_started
-      create-beacon-chain-genesis:
-        condition: service_completed_successfully
-    ports:
+    expose:
       - 4000:4000
       - 3500:3500
       - 8080:8080
+      - 8081:8081
       - 12000:12000
       - 13000:13000
     volumes:
       - ./consensus:/consensus
       - ./jwtsecret:/execution/jwtsecret
-
-  # We run a validator client with 64, deterministically-generated keys that match
-  # The validator keys present in the beacon chain genesis state generated a few steps above.
+  
   validator:
     image: "gcr.io/prysmaticlabs/prysm/validator:latest"
     networks:
       ETHclient_net:
-        ipv4_address: 172.19.0.4
+        ipv4_address: 172.19.0.10
     command:
-      - --beacon-rpc-provider=172.19.0.3:4000
-      - --monitoring-host=0.0.0.0
-      - --monitoring-port=8081
+      - --beacon-rpc-provider=172.19.0.9:4000
+      - --beacon-rpc-gateway-provider=172.19.0.9:3500
+      - --graffiti=test 
       - --datadir=/consensus/validatordata
       - --accept-terms-of-use
       - --interop-num-validators=64
-      - --interop-start-index=0
+      - --interop-start-index=64
       - --chain-config-file=/consensus/config.yml
     depends_on:
       beacon-chain:
         condition: service_started
-    ports:
-      - 8081:8081
     volumes:
       - ./consensus:/consensus
 

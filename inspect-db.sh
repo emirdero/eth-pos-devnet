@@ -1,0 +1,1 @@
+boltbrowser consensus/validatordata/validator.db

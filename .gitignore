@@ -3,4 +3,9 @@ consensus/genesis.ssz
 consensus/validatordata
 execution/geth
 execution/geth.ipc
+member-nodes/consensus
+member-nodes/execution
+lighthouse-node/consensus
+lighthouse-node/execution
+lighthouse-node/execution/geth.ipc
 .idea/

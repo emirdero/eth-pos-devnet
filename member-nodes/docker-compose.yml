@@ -1,7 +1,7 @@
 version: "1.0"
 services:
   geth:
-    image: "geth_from_source:${GETH_TAG}"
+    image: "emird/geth_from_source:${GETH_TAG}"
     networks:
       ETHclient_net:
         ipv4_address: 172.19.0.${GETH_IP}

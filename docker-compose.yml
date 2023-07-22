@@ -31,7 +31,7 @@ services:
   # Runs the go-ethereum execution client with the specified, unlocked account and necessary
   # APIs to allow for proof-of-stake consensus via Prysm.
   geth:
-    image: "geth_from_source:latest"
+    image: "emird/geth_from_source:latest"
     networks:
       ETHclient_net:
         ipv4_address: 172.19.0.2

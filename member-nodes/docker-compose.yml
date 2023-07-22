@@ -1,16 +1,15 @@
 version: "1.0"
 services:
   geth:
-    image: "ethereum/client-go:latest"
+    image: "geth_from_source:${GETH_TAG}"
     networks:
       ETHclient_net:
-        ipv4_address: 172.19.0.5
+        ipv4_address: 172.19.0.${GETH_IP}
     command:
       - --http
       - --http.api=eth,net,web3
       - --http.addr=0.0.0.0
       - --netrestrict=172.19.0.0/16
-      - --ethstats=node2:2e0834786285daccd064ca17f1654f67b4aef298acbb82cef9ec422fb4975622@127.0.0.1:30303
       - --networkid=32382
       - --authrpc.vhosts=*
       - --authrpc.addr=0.0.0.0
@@ -36,10 +35,10 @@ services:
   # The account used in go-ethereum is set as the suggested fee recipient for transactions
   # proposed via the validators attached to the beacon node.
   beacon-chain:
-    image: "emird/prysm_bc_source:bug_slash"
+    image: "emird/prysm_bc_source:${PRYSM_TAG}"
     networks:
       ETHclient_net:
-        ipv4_address: 172.19.0.6
+        ipv4_address: 172.19.0.${PRYSM_IP}
     command:
       - --datadir=/consensus/beacondata
       # No peers to sync with in this testnet, so setting to 0
@@ -51,7 +50,7 @@ services:
       # We specify the chain id used by our execution client
       - --chain-id=32382
       - --contract-deployment-block=0
-      - --execution-endpoint=http://172.19.0.5:8551
+      - --execution-endpoint=http://172.19.0.${GETH_IP}:8551
       - --rpc-host=0.0.0.0
       - --accept-terms-of-use
       - --jwt-secret=/execution/jwtsecret
@@ -71,18 +70,18 @@ services:
       - ./jwtsecret:/execution/jwtsecret
   
   validator:
-    image: "emird/prysm_vc_source:bug_slash4"
+    image: "emird/prysm_vc_source:${VAL_TAG}"
     networks:
       ETHclient_net:
-        ipv4_address: 172.19.0.7
+        ipv4_address: 172.19.0.${VAL_IP}
     command:
-      - --beacon-rpc-provider=172.19.0.6:4000
-      - --beacon-rpc-gateway-provider=172.19.0.6:3500
+      - --beacon-rpc-provider=172.19.0.${PRYSM_IP}:4000
+      - --beacon-rpc-gateway-provider=172.19.0.${PRYSM_IP}:3500
       - --graffiti=test 
       - --datadir=/consensus/validatordata
       - --accept-terms-of-use
       - --interop-num-validators=64
-      - --interop-start-index=64
+      - --interop-start-index=${VAL_START}
       - --chain-config-file=/consensus/config.yml
     depends_on:
       beacon-chain:
@@ -92,4 +91,8 @@ services:
 networks:
   ETHclient_net:
     name: ETHclient_net
-    
+    external: true
+    ipam:
+        driver: default
+        config:
+            - subnet: "172.19.0.0/16"

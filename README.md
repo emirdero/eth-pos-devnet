@@ -1,7 +1,6 @@
-run reset.sh
+run ./reset.sh
 wait a few seconds
-run reset-p2p.sh
-run memebers.sh
+run ./reset-memebers.sh
 
 
 # Ethereum Proof-of-Stake Devnet

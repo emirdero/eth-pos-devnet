@@ -31,7 +31,7 @@ services:
   # Runs the go-ethereum execution client with the specified, unlocked account and necessary
   # APIs to allow for proof-of-stake consensus via Prysm.
   geth:
-    image: "geth-from-source:latest"
+    image: "geth_from_source:latest"
     networks:
       ETHclient_net:
         ipv4_address: 172.19.0.2
@@ -41,7 +41,6 @@ services:
       - --http.addr=0.0.0.0
       - --netrestrict=172.19.0.0/16
       - --networkid=32382
-      - --ethstats=node1:2e0834786285daccd064ca17f1654f67b4aef298acbb82cef9ec422fb4975622@127.0.0.1:30303
       - --metrics
       - --metrics.addr=0.0.0.0
       - --authrpc.vhosts=*
@@ -132,7 +131,31 @@ services:
     volumes:
       - ./consensus:/consensus
 
+  prometheus:
+    image: "prom/prometheus:latest"
+    networks:
+      ETHclient_net:
+        ipv4_address: 172.19.0.5
+    volumes:
+      - ./prometheus:/etc/prometheus
+    ports:
+      - 9090:9090
+  
+  docker-exporter:
+    image: "wywywywy/docker_stats_exporter:latest"
+    networks:
+      ETHclient_net:
+        ipv4_address: 172.19.0.6
+    volumes:
+      - ./var/run/docker.sock:/var/run/docker.sock
+    expose:
+      - 9487:9487    
+
 networks:
   ETHclient_net:
     name: ETHclient_net
+    ipam:
+        driver: default
+        config:
+            - subnet: "172.19.0.0/16"
   

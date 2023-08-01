@@ -1,0 +1,8 @@
+version: "1.0"
+services:
+  geth:
+    image: "prom/prometheus:latest"
+    ports:
+      - 9090:9090
+    volumes:
+      - ./run-2/snapshots/20230731T115523Z-35a1f8879a3ebcbe:/prometheus

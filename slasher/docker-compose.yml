@@ -1,19 +1,16 @@
 version: "1.0"
 services:
   geth:
-    image: "emird/geth_from_source:${GETH_TAG}"
+    image: "emird/geth_from_source:latest"
     networks:
       ETHclient_net:
-        ipv4_address: 172.19.0.${GETH_IP}
+        ipv4_address: 172.19.0.7
     command:
-      - --http
-      - --http.api=eth,net,web3
-      - --http.addr=0.0.0.0
       - --netrestrict=172.19.0.0/16
       - --networkid=32382
-      - --metrics
-      - --metrics.addr=0.0.0.0
-      - --metrics.port=6060
+      - --http
+      - --http.api=eth
+      - --http.addr=0.0.0.0
       - --authrpc.vhosts=*
       - --authrpc.addr=0.0.0.0
       - --authrpc.jwtsecret=/execution/jwtsecret
@@ -26,9 +23,8 @@ services:
     expose:
       - 8551:8551
       - 8545:8545
+      - 6060:6060
       - 30303:30303
-    ports:
-      - 6061:6060
     volumes:
       - ./execution:/execution
       - ./execution/geth_password.txt:/execution/geth_password.txt
@@ -39,16 +35,15 @@ services:
   # The account used in go-ethereum is set as the suggested fee recipient for transactions
   # proposed via the validators attached to the beacon node.
   beacon-chain:
-    image: "emird/prysm_bc_source:${PRYSM_TAG}"
+    image: "emird/prysm_bc_source:latest"
     networks:
       ETHclient_net:
-        ipv4_address: 172.19.0.${PRYSM_IP}
+        ipv4_address: 172.19.0.8
     command:
+      - --slasher
       - --datadir=/consensus/beacondata
       # No peers to sync with in this testnet, so setting to 0
       - --min-sync-peers=0
-      - --monitoring-host=0.0.0.0
-      - --monitoring-port=8080
       - --genesis-state=/consensus/genesis.ssz
       - --bootstrap-node=${CL_BOOTNODE}
       # The chain configuration file used for setting up Prysm
@@ -56,7 +51,7 @@ services:
       # We specify the chain id used by our execution client
       - --chain-id=32382
       - --contract-deployment-block=0
-      - --execution-endpoint=http://172.19.0.${GETH_IP}:8551
+      - --execution-endpoint=http://172.19.0.7:8551
       - --rpc-host=0.0.0.0
       - --accept-terms-of-use
       - --jwt-secret=/execution/jwtsecret
@@ -67,37 +62,14 @@ services:
     expose:
       - 4000:4000
       - 3500:3500
+      - 8080:8080
+      - 8081:8081
       - 12000:12000
       - 13000:13000
-    ports:
-      - 8090:8080
     volumes:
       - ./consensus:/consensus
       - ./jwtsecret:/execution/jwtsecret
-  
-  validator:
-    image: "emird/prysm_vc_source:${VAL_TAG}"
-    networks:
-      ETHclient_net:
-        ipv4_address: 172.19.0.${VAL_IP}
-    command:
-      - --beacon-rpc-provider=172.19.0.${PRYSM_IP}:4000
-      - --beacon-rpc-gateway-provider=172.19.0.${PRYSM_IP}:3500
-      - --monitoring-host=0.0.0.0
-      - --monitoring-port=8081
-      - --graffiti=member 
-      - --datadir=/consensus/validatordata
-      - --accept-terms-of-use
-      - --interop-num-validators=64
-      - --interop-start-index=${VAL_START}
-      - --chain-config-file=/consensus/config.yml
-    depends_on:
-      beacon-chain:
-        condition: service_started
-    ports:
-      - 8091:8081
-    volumes:
-      - ./consensus:/consensus
+
 networks:
   ETHclient_net:
     name: ETHclient_net

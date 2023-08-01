@@ -11,9 +11,6 @@ services:
       - --http.addr=0.0.0.0
       - --netrestrict=172.19.0.0/16
       - --networkid=32382
-      - --metrics
-      - --metrics.addr=0.0.0.0
-      - --metrics.port=6060
       - --authrpc.vhosts=*
       - --authrpc.addr=0.0.0.0
       - --authrpc.jwtsecret=/execution/jwtsecret
@@ -27,8 +24,6 @@ services:
       - 8551:8551
       - 8545:8545
       - 30303:30303
-    ports:
-      - 6061:6060
     volumes:
       - ./execution:/execution
       - ./execution/geth_password.txt:/execution/geth_password.txt
@@ -47,8 +42,6 @@ services:
       - --datadir=/consensus/beacondata
       # No peers to sync with in this testnet, so setting to 0
       - --min-sync-peers=0
-      - --monitoring-host=0.0.0.0
-      - --monitoring-port=8080
       - --genesis-state=/consensus/genesis.ssz
       - --bootstrap-node=${CL_BOOTNODE}
       # The chain configuration file used for setting up Prysm
@@ -69,8 +62,6 @@ services:
       - 3500:3500
       - 12000:12000
       - 13000:13000
-    ports:
-      - 8090:8080
     volumes:
       - ./consensus:/consensus
       - ./jwtsecret:/execution/jwtsecret
@@ -83,8 +74,6 @@ services:
     command:
       - --beacon-rpc-provider=172.19.0.${PRYSM_IP}:4000
       - --beacon-rpc-gateway-provider=172.19.0.${PRYSM_IP}:3500
-      - --monitoring-host=0.0.0.0
-      - --monitoring-port=8081
       - --graffiti=member 
       - --datadir=/consensus/validatordata
       - --accept-terms-of-use
@@ -94,8 +83,6 @@ services:
     depends_on:
       beacon-chain:
         condition: service_started
-    ports:
-      - 8091:8081
     volumes:
       - ./consensus:/consensus
 networks:

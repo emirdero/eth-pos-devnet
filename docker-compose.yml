@@ -8,7 +8,7 @@ services:
       - testnet
       - generate-genesis
       - --fork=bellatrix
-      - --num-validators=128
+      - --num-validators=${NUMBER_OF_VALIDATORS}
       - --output-ssz=/consensus/genesis.ssz
       - --chain-config-file=/consensus/config.yml
       - --geth-genesis-json-in=/execution/genesis.json
@@ -36,13 +36,11 @@ services:
       ETHclient_net:
         ipv4_address: 172.19.0.2
     command:
-      - --http
-      - --http.api=eth,net,web3
-      - --http.addr=0.0.0.0
       - --netrestrict=172.19.0.0/16
       - --networkid=32382
       - --metrics
       - --metrics.addr=0.0.0.0
+      - --metrics.port=6060
       - --authrpc.vhosts=*
       - --authrpc.addr=0.0.0.0
       - --authrpc.jwtsecret=/execution/jwtsecret
@@ -51,11 +49,12 @@ services:
       - --unlock=0x123463a4b065722e99115d6c222f267d9cabb524
       - --password=/execution/geth_password.txt
       - --syncmode=full
-    ports:
+    expose:
       - 8551:8551
       - 8545:8545
-      - 6060:6060
       - 30303:30303
+    ports:
+      - 6060:6060
     depends_on:
       geth-genesis:
         condition: service_completed_successfully
@@ -75,7 +74,6 @@ services:
         ipv4_address: 172.19.0.3
     command:
       - --datadir=/consensus/beacondata
-      - --slasher
       # No peers to sync with in this testnet, so setting to 0
       - --min-sync-peers=0
       - --monitoring-host=0.0.0.0
@@ -118,6 +116,7 @@ services:
       - --beacon-rpc-provider=172.19.0.3:4000
       - --monitoring-host=0.0.0.0
       - --monitoring-port=8081
+      - --graffiti=bootnode
       - --datadir=/consensus/validatordata
       - --accept-terms-of-use
       - --interop-num-validators=64
@@ -136,8 +135,14 @@ services:
     networks:
       ETHclient_net:
         ipv4_address: 172.19.0.5
+    command:
+      - --web.enable-admin-api
+      - --config.file=/etc/prometheus/prometheus.yml
+      - --storage.tsdb.path=/prometheus
+      - --web.console.libraries=/usr/share/prometheus/console_libraries
+      - --web.console.templates=/usr/share/prometheus/consoles
     volumes:
-      - ./prometheus:/etc/prometheus
+      - ./custom_prometheus:/etc/prometheus
     ports:
       - 9090:9090
   

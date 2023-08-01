@@ -1,9 +1,0 @@
-global:
-  scrape_interval: 12s
-
-scrape_configs:
-  - job_name: 'docker_stats_exporter'
-    metrics_path: /
-    static_configs:
-    - targets:
-        - '172.19.0.6:9487'

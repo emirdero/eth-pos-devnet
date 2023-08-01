@@ -36,10 +36,10 @@ do
         # Only add monitoring to the first bugged client
         if [ $i -gt 1 ]
         then
-            # Copy over client with metrics enabled
-            cp member-nodes/docker-compose.yml member-nodes_$i/docker-compose.yml
-        else
+            # Copy over client without metrics enabled
             cp member-nodes/docker-compose-no-metrics.yml member-nodes_$i/docker-compose.yml
+        else
+            cp member-nodes/docker-compose.yml member-nodes_$i/docker-compose.yml
         fi
 
         # Get random number from 2 to 98 for client diversity
@@ -47,7 +47,7 @@ do
         echo $random_num >> random-numbers.txt
         cd member-nodes_$i
         tag=latest
-        if [ $random_num -gt $((i*2)) ]
+        if [ $random_num -gt $((i*100/number_of_members)) ]
         then
             # Copy over bugged client
             tag=bug_propose

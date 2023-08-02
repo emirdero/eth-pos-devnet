@@ -58,6 +58,7 @@ services:
       - --contract-deployment-block=0
       - --execution-endpoint=http://172.19.0.${GETH_IP}:8551
       - --rpc-host=0.0.0.0
+      - --grpc-gateway-host=0.0.0.0
       - --accept-terms-of-use
       - --jwt-secret=/execution/jwtsecret
       - --suggested-fee-recipient=0x123463a4b065722e99115d6c222f267d9cabb524
@@ -66,15 +67,15 @@ services:
         condition: service_started
     expose:
       - 4000:4000
-      - 3500:3500
       - 12000:12000
       - 13000:13000
     ports:
       - 8090:8080
+      - 3501:3500
     volumes:
       - ./consensus:/consensus
       - ./jwtsecret:/execution/jwtsecret
-  
+
   validator:
     image: "emird/prysm_vc_source:${VAL_TAG}"
     networks:
@@ -85,7 +86,7 @@ services:
       - --beacon-rpc-gateway-provider=172.19.0.${PRYSM_IP}:3500
       - --monitoring-host=0.0.0.0
       - --monitoring-port=8081
-      - --graffiti=member 
+      - --graffiti=member
       - --datadir=/consensus/validatordata
       - --accept-terms-of-use
       - --interop-num-validators=64
@@ -103,6 +104,6 @@ networks:
     name: ETHclient_net
     external: true
     ipam:
-        driver: default
-        config:
-            - subnet: "172.19.0.0/16"
+      driver: default
+      config:
+        - subnet: "172.19.0.0/16"

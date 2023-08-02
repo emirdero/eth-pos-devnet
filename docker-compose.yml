@@ -101,6 +101,8 @@ services:
       - 8080:8080
       - 12000:12000
       - 13000:13000
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
     volumes:
       - ./consensus:/consensus
       - ./jwtsecret:/execution/jwtsecret
@@ -132,9 +134,7 @@ services:
 
   prometheus:
     image: "prom/prometheus:latest"
-    networks:
-      ETHclient_net:
-        ipv4_address: 172.19.0.5
+    network_mode: "host"
     command:
       - --web.enable-admin-api
       - --config.file=/etc/prometheus/prometheus.yml
@@ -145,22 +145,13 @@ services:
       - ./custom_prometheus:/etc/prometheus
     ports:
       - 9090:9090
-  
-  docker-exporter:
-    image: "wywywywy/docker_stats_exporter:latest"
-    networks:
-      ETHclient_net:
-        ipv4_address: 172.19.0.6
-    volumes:
-      - ./var/run/docker.sock:/var/run/docker.sock
-    expose:
-      - 9487:9487    
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
 
 networks:
   ETHclient_net:
     name: ETHclient_net
     ipam:
-        driver: default
-        config:
-            - subnet: "172.19.0.0/16"
-  
+      driver: default
+      config:
+        - subnet: "172.19.0.0/16"

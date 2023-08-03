@@ -1,10 +1,18 @@
 #!/bin/bash
-declare -i number_of_members=1
-declare -i number_of_runs=1
-bug_ratio=100/$number_of_members
+j=$#;
 
-echo "Enter a bug: [1]: Proposal bug [2]: Slashable bug [3]: Chain split bug"
-read bug_choice
+if [ $j -lt 3 ]
+then
+    echo "Error: missing positional arguments"
+    echo "Argument 1: Enter a bug: [1]: Proposal bug [2]: Slashable bug [3]: Chain split bug"
+    echo "Argument 2: Enter an integer of 1 or higher for the number of member nodes"
+    echo "Argument 3: Enter an integer of 1 or higher for the number of runs to perform"
+    exit 1
+fi
+declare -i bug_choice=$1
+declare -i number_of_members=$2
+declare -i number_of_runs=$3
+bug_ratio=100/$number_of_members
 
 case $bug_choice in
     1)

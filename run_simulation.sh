@@ -35,6 +35,10 @@ do
     NUMBER_OF_VALIDATORS=$((number_of_members*64+64)) docker compose up --detach
     # Sleep for twenty seconds for bootnode to activate, might need to be increased for slower systems
     sleep 20
+    # Get random number from 2 to 98 for client diversity
+    random_num=$(python3 random_number.py)
+    echo $random_num >> random-numbers.txt
+    # Reset boot node adresses for p2p network
     ./reset-p2p.sh
     #GETH_TAG=latest GETH_IP=7 PRYSM_TAG=latest PRYSM_IP=8 VAL_TAG=latest VAL_IP=9 VAL_START=64 ./members_old.sh
     for (( i=1; i<=$number_of_members; i++ ))
@@ -61,9 +65,6 @@ do
             cp member-nodes/docker-compose.yml member-nodes_$i/docker-compose.yml
         fi
 
-        # Get random number from 2 to 98 for client diversity
-        random_num=$(python3 random_number.py)
-        echo $random_num >> random-numbers.txt
         cd member-nodes_$i
         vc_tag=latest
         bc_tag=latest

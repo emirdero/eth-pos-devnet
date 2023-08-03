@@ -1,1 +1,1 @@
-for((i=1;i<=50;i+=1)); do sudo rm -rf member-nodes_$i; done
+for((i=1;i<=50;i+=1)); do sudo rm -rf member-nodes_$i/; done

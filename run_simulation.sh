@@ -36,7 +36,7 @@ do
     # Sleep for twenty seconds for bootnode to activate, might need to be increased for slower systems
     sleep 20
     # Get random number from 2 to 98 for client diversity
-    random_num=$(python3 random_number.py)
+    random_num=$(python3 random_number.py $number_of_members)
     echo $random_num >> random-numbers.txt
     # Reset boot node adresses for p2p network
     ./reset-p2p.sh
@@ -69,7 +69,7 @@ do
         vc_tag=latest
         bc_tag=latest
         geth_tag=latest
-        if [ $random_num -lt $((i*bug_ratio)) ]
+        if [ $random_num -ge $((i*bug_ratio)) ]
         then
             # Copy over bugged client
             case $bug_choice in
